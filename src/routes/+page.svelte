@@ -23,7 +23,7 @@
 		}
 	}
 
-	let preview: string | null = null;
+	let imagePath: string | null = null;
 	let frequency = 100;
 	const onFileSelected = (e: Event) => {
 		const target = e.target as HTMLInputElement;
@@ -34,9 +34,9 @@
 		reader.readAsDataURL(image);
 		reader.onload = (e) => {
 			const target = e.target as FileReader;
-			preview = target.result as string;
+			imagePath = target.result as string;
 			const img = new Image();
-			img.src = preview;
+			img.src = imagePath;
 			img.onload = () => {
 				const { r, g, b } = getAverageRGB(img);
 				frequency = (r + g + b) / 3;
@@ -143,7 +143,7 @@
 	on:change={(e) => onFileSelected(e)}
 />
 <h2>Preview:</h2>
-<img src={preview} alt="please upload" />
+<img src={imagePath} alt="please upload" />
 <h2>Result:</h2>
 <div>frequency: {frequency}</div>
 <button disabled={isPlaying} on:click={handlePlay}>Play</button>
