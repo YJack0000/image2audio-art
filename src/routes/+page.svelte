@@ -23,7 +23,7 @@
 		}
 	}
 
-	let imagePath: string | null = '/example.png';
+	let imagePath: string | null = './example.png';
 	let frequency = 100;
 	const onFileSelected = (e: Event) => {
 		const target = e.target as HTMLInputElement;
