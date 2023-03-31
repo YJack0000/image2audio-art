@@ -23,7 +23,7 @@
 		}
 	}
 
-	let imagePath: string | null = null;
+	let imagePath: string | null = '/example.png';
 	let frequency = 100;
 	const onFileSelected = (e: Event) => {
 		const target = e.target as HTMLInputElement;
@@ -143,7 +143,7 @@
 	on:change={(e) => onFileSelected(e)}
 />
 <h2>Preview:</h2>
-<img src={imagePath} alt="please upload" />
+<img src={imagePath} alt="please upload" style="max-height: 400px" />
 <h2>Result:</h2>
 <div>frequency: {frequency}</div>
 <button disabled={isPlaying} on:click={handlePlay}>Play</button>
