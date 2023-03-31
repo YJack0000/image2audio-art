@@ -5,14 +5,14 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.56c5cac3.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.d7f37d93.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.330bc23d.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.351932af.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.5bbe2387.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.74676172.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.edf9ce48.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/layout.svelte.2077a572.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.ts.984db11e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.c2731852.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.8e76069a.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -22,7 +22,7 @@
 <h2>Upload a picture:</h2>
 <input accept="image/png, image/jpeg" id="image" name="avatar" type="file">
 <h2>Preview:</h2>
-<img src="/example.png" alt="please upload" style="max-height: 400px">
+<img src="./example.png" alt="please upload" style="max-height: 400px">
 <h2>Result:</h2>
 <div>frequency: 100</div>
 <button >Play</button>
@@ -39,7 +39,7 @@
 			
 			<script>
 				{
-					__sveltekit_1peffkn = {
+					__sveltekit_1sa4kyk = {
 						env: {},
 						base: new URL(".", location).pathname.slice(0, -1),
 						element: document.currentScript.parentElement
@@ -48,10 +48,10 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.56c5cac3.js"),
-						import("./_app/immutable/entry/app.5bbe2387.js")
+						import("./_app/immutable/entry/start.d7f37d93.js"),
+						import("./_app/immutable/entry/app.edf9ce48.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_1peffkn.element, {
+						kit.start(app, __sveltekit_1sa4kyk.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,
