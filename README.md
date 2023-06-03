@@ -1,6 +1,8 @@
-# create-svelte
+# 圖片轉頻率網頁練習
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Description
+
+輸入進一張圖片，將其轉壞為 Image 物件並平均其色票成頻率，並將頻率播放。播放頻率向右偏移，以確保為人耳聽得到的聲音。
 
 ## Creating a project
 
@@ -34,5 +36,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
